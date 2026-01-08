@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://clearflowgutters.co.uk/sitemap.xml
+
+# Allow search engines to crawl all content
+# for this professional gutter cleaning service website
