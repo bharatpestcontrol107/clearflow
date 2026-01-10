@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { PHONE_NUMBER_FORMATTED } from './constants';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,7 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "ClearFlow Gutters | Professional Gutter Cleaning Services UK | clearflowgutters.co.uk",
   description:
-    "Professional gutter cleaning, repairs & maintenance across the UK. Fully insured with 15+ years experience. Same-day service available. Call 0800 123 456 for free quote.",
+    `Professional gutter cleaning, repairs & maintenance across the UK. Fully insured with 15+ years experience. Same-day service available. Call ${PHONE_NUMBER_FORMATTED} for free quote.`,
   keywords: "gutter cleaning UK, gutter repairs, professional gutter services, gutter maintenance, clearflow gutters, commercial gutter cleaning",
   openGraph: {
     title: "ClearFlow Gutters - Professional Gutter Cleaning Services UK",

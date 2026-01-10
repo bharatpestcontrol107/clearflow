@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { PHONE_NUMBER_LINK } from '../constants';
 
 export default function ServicesPage() {
   const services = [
@@ -209,7 +210,7 @@ export default function ServicesPage() {
             <div className="text-center mb-8">
               <p className="text-lg text-gray-600 mb-4">
                 Don't see what you need?{' '}
-                <a href="tel:0800123456" className="text-cyan-600 font-semibold hover:underline">
+                <a href={PHONE_NUMBER_LINK} className="text-cyan-600 font-semibold hover:underline">
                   Contact us
                 </a>
               </p>
