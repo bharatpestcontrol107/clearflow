@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { PHONE_NUMBER_FORMATTED, PHONE_NUMBER_LINK, EMAIL } from '../constants';
 import Image from 'next/image';
+import logo from '../../public/logo.png';
 
 export default function Footer() {
   return (
@@ -10,7 +11,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <Image src="/logo.png" alt="ClearFlow logo" width={140} height={140} className="object-contain" />
+              <Image src={logo} alt="ClearFlow logo" width={140} height={140} className="object-contain" />
             </div>
             <p className="text-sm text-gray-400 mb-4">
               Professional gutter cleaning and maintenance services across the UK. Fully insured and 5-star rated.

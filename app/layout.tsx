@@ -25,6 +25,21 @@ export const metadata: Metadata = {
     siteName: "ClearFlow Gutters",
     type: "website",
   },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black-translucent",
+    title: "ClearFlow Gutters",
+  },
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#111618" },
+  ],
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({
