@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { PHONE_NUMBER_FORMATTED, PHONE_NUMBER_LINK, EMAIL } from '../constants';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -9,12 +10,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-full bg-linear-to-br from-cyan-400 to-blue-500 flex items-center justify-center">
-                <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
-                </svg>
-              </div>
-              <span className="text-xl font-bold text-white">ClearFlow</span>
+              <Image src="/logo.png" alt="ClearFlow logo" width={140} height={140} className="object-contain" />
             </div>
             <p className="text-sm text-gray-400 mb-4">
               Professional gutter cleaning and maintenance services across the UK. Fully insured and 5-star rated.

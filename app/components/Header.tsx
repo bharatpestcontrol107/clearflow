@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
 import { PHONE_NUMBER_LINK, PHONE_NUMBER_FORMATTED } from '../constants';
+import logo from '../../public/logo.png';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -20,23 +21,21 @@ export default function Header() {
             <span>Contact your nearest technician | OPEN 7 DAYS A WEEK</span>
           </div>
           <div className="hidden sm:flex items-center gap-6">
-            <a href="#reviews" className="hover:underline">Review Us</a>
-            <a href="#request-call" className="hover:underline">Request a Call</a>
-            <a href="#help" className="hover:underline">Help Centre</a>
+            <a href={PHONE_NUMBER_LINK} className="hover:underline">Request a Call</a>
+            <a href={PHONE_NUMBER_LINK} className="hover:underline">Help Centre</a>
           </div>
         </div>
       </div>
 
       {/* Main Navigation */}
-      <div className="w-full bg-gradient-to-b from-gray-900 to-black text-white shadow">
+      <div className="w-full bg-linear-to-b from-gray-900 to-black text-white shadow">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Brand */}
             <Link href="/" className="flex items-center gap-3 hover:opacity-90 transition">
               <div className="relative w-36 h-10">
-                <Image src="/logo.jpg" alt="ClearFlow logo" fill className="object-contain" />
+                <Image src={logo} alt="ClearFlow logo" fill className="object-contain" />
               </div>
-              <span className="hidden sm:block text-[11px] text-gray-300">Gutter cleaning & repair specialists</span>
             </Link>
 
             {/* Desktop Nav */}
