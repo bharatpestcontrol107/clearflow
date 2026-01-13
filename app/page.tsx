@@ -31,37 +31,36 @@ export default function Home() {
         <section className="bg-blue-600 text-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* Low Prices */}
-              <div className="flex items-center md:items-start gap-3">
-                <svg className="w-6 h-6 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              {/* Affordable Pricing */}
+              <div className="flex items-center gap-3">
+                <svg className="w-8 h-8 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
                 </svg>
                 <div>
-                  <div className="text-lg font-bold">Low-Prices</div>
-                  <div className="text-sm text-blue-100">Take advantage of our comprehensive service at industry low prices.</div>
+                  <div className="text-lg font-bold">Competitive Pricing</div>
+                  <div className="text-sm text-blue-100">Premium service at unbeatable rates</div>
                 </div>
               </div>
 
-              {/* Top Rated Service */}
-              <div className="flex items-center justify-center md:justify-start gap-3">
-                <div className="flex gap-1">
-                  {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-6 h-6 text-yellow-300" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
+              {/* 5-Star Rated */}
+              <div className="flex items-center gap-3">
+                <svg className="w-8 h-8 shrink-0 text-yellow-300" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+                <div>
+                  <div className="text-lg font-bold">5-Star Rated</div>
+                  <div className="text-sm text-blue-100">Trusted by thousands of customers</div>
                 </div>
-                <div className="text-lg font-bold">Top Rated Service</div>
               </div>
 
               {/* Award Winning */}
-              <div className="flex items-start md:items-center gap-3">
-                <svg className="w-6 h-6 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 21l4-2 4 2V5a4 4 0 10-8 0v16z" />
+              <div className="flex items-center gap-3">
+                <svg className="w-8 h-8 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
                 </svg>
                 <div>
                   <div className="text-lg font-bold">Award Winning</div>
-                  <div className="text-sm text-blue-100">SME | Best Gutter Cleaning & Repair Company 2020, 2021 & 2022</div>
+                  <div className="text-sm text-blue-100">Best Gutter Service 2020-2022</div>
                 </div>
               </div>
             </div>

@@ -33,7 +33,7 @@ export default function Header() {
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Brand */}
             <Link href="/" className="flex items-center gap-3 hover:opacity-90 transition">
-              <div className="relative w-36 h-10">
+              <div className="relative w-36 h-15">
                 <Image src={logo} alt="ClearFlow logo" fill className="object-contain" />
               </div>
             </Link>
@@ -41,8 +41,7 @@ export default function Header() {
             {/* Desktop Nav */}
             <nav className="hidden lg:flex items-center gap-8">
               <Link href="/" className="hover:text-blue-400 transition">Home</Link>
-              <Link href="#about" className="hover:text-blue-400 transition">About</Link>
-              <Link href="#blog" className="hover:text-blue-400 transition">Blog</Link>
+              <Link href="/about" className="hover:text-blue-400 transition">About</Link>
               <Link href="/services" className="hover:text-blue-400 transition">Services</Link>
               <Link href="/quote" className="hover:text-blue-400 transition">Contact</Link>
             </nav>

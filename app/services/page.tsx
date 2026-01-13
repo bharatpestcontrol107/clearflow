@@ -60,90 +60,95 @@ export default function ServicesPage() {
       <Header />
       <main className="min-h-screen">
         {/* Hero Section */}
-        <section className="relative pt-16 lg:pt-20 bg-linear-to-br from-cyan-500 to-blue-600 text-white">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
-            <div className="max-w-3xl mx-auto text-center">
-              <Link href="/" className="inline-flex items-center gap-2 text-blue-100 hover:text-white mb-6 transition">
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                </svg>
-                Back to Home
-              </Link>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+        <section className="relative bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 md:py-32">
+            <div className="max-w-4xl mx-auto text-center">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold uppercase tracking-wide leading-tight mb-6">
                 Our Services
               </h1>
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 lg:p-8">
-                <h2 className="text-2xl lg:text-3xl font-bold mb-4">
-                  Keep your home dry & safe.
-                </h2>
-                <p className="text-lg text-blue-100">
-                  Professional gutter maintenance for UK homes.
+              <p className="text-xl md:text-2xl text-blue-100 font-medium">
+                Professional gutter maintenance and cleaning services for UK homes
                 </p>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Services Grid */}
-        <section className="py-16 lg:py-24 bg-white">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Select a Service
+        <section className="bg-white">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14">
+            {/* Heading with side lines */}
+            <div className="flex items-center gap-6 mb-10">
+              <span className="hidden sm:block h-px bg-gray-300 flex-1" />
+              <h2 className="text-center text-2xl md:text-3xl font-extrabold tracking-wide uppercase text-gray-900">
+                Our Range Of Gutter Services
               </h2>
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                We offer comprehensive gutter services to keep your property protected
-              </p>
+              <span className="hidden sm:block h-px bg-gray-300 flex-1" />
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
-              {services.map((service, index) => (
-                <div
-                  key={index}
-                  className="group bg-white border-2 border-gray-200 rounded-2xl overflow-hidden hover:border-cyan-500 hover:shadow-2xl transition-all duration-300 cursor-pointer"
-                >
-                  <div className="relative h-48 lg:h-56 overflow-hidden">
-                    <img
-                      src={service.image}
-                      alt={service.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
-                    />
-                    <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent"></div>
-                    <div className="absolute bottom-4 left-4">
-                      <div className="w-12 h-12 rounded-full bg-linear-to-br from-cyan-400 to-blue-500 flex items-center justify-center group-hover:scale-110 transition">
-                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={service.icon} />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="p-6 lg:p-8">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-2 group-hover:text-cyan-600 transition">
-                      {service.title}
-                    </h3>
-                    <p className="text-gray-600 mb-4">{service.description}</p>
-                    <p className="text-gray-700 mb-6">{service.details}</p>
-                    <div className="grid grid-cols-2 gap-3 mb-6">
-                      {service.features.map((feature, i) => (
-                        <div key={i} className="flex items-center gap-2 text-sm text-gray-600">
-                          <svg className="w-5 h-5 text-green-500 shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                          </svg>
-                          <span>{feature}</span>
-                        </div>
-                      ))}
-                    </div>
-                    <div className="flex items-center justify-between pt-4 border-t border-gray-200">
-                      <span className="text-cyan-600 font-semibold group-hover:gap-2 flex items-center gap-1 transition-all">
-                        Learn More
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                        </svg>
-                      </span>
-                    </div>
-                  </div>
+            <div className="grid md:grid-cols-3 gap-8">
+              {/* Top row */}
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 text-center mb-3">Gutter Cleaning</h3>
+                <div className="relative aspect-4/3 rounded-md overflow-hidden shadow">
+                  <img src="/images/service_gutter_cleaning.png" alt="Gutter Cleaning" className="w-full h-full object-cover" />
                 </div>
-              ))}
+                <p className="mt-4 text-gray-700 text-sm leading-relaxed">
+                  Professional gutter cleaning for <span className="font-semibold">residential and commercial properties</span>. We use specialist vacuum equipment to safely remove all debris without making a mess. Lightweight carbon fibre poles allow us to clean gutters up-to 4 stories high, including difficult gutters over conservatories.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 text-center mb-3">Gutter Repairs</h3>
+                <div className="relative aspect-4/3 rounded-md overflow-hidden shadow">
+                  <img src="/images/service_gutter_repair.png" alt="Gutter Repairs" className="w-full h-full object-cover" />
+                </div>
+                <p className="mt-4 text-gray-700 text-sm leading-relaxed">
+                  Expert gutter repair services including <span className="font-semibold">leak fixes, clip replacements</span>, joint sealing, and realignment. We can repair most gutter types including UPVC, cast iron, and aluminum systems with a <span className="font-semibold">12-month warranty</span> on all repairs.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 text-center mb-3">Fascia & Soffit Cleaning</h3>
+                <div className="relative aspect-4/3 rounded-md overflow-hidden shadow">
+                  <img src="/images/service_upvc_cleaning.png" alt="Fascia & Soffit Cleaning" className="w-full h-full object-cover" />
+                </div>
+                <p className="mt-4 text-gray-700 text-sm leading-relaxed">
+                  Professional cleaning of fascia boards, soffits, and UPVC roofline. We use <span className="font-semibold">eco-friendly cleaning solutions</span> and HOT, PURIFIED water to remove dirt, algae, and stains, restoring your roofline to <span className="font-semibold">like-new condition</span>.
+                </p>
+              </div>
+            </div>
+
+            {/* Bottom row */}
+            <div className="mt-10 grid md:grid-cols-3 gap-8">
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 text-center mb-3">Free Gutter Inspection</h3>
+                <div className="relative aspect-4/3 rounded-md overflow-hidden shadow">
+                  <img src="/images/service_gutter_inspection.png" alt="Free Gutter Inspection" className="w-full h-full object-cover" />
+                </div>
+                <p className="mt-4 text-gray-700 text-sm leading-relaxed">
+                  Get your roof and gutters checked by an expert with a <span className="font-semibold">FREE gutter inspection</span> by ClearFlow Gutter Cleaning. This popular service ensures a thorough check of your roof and gutters to identify any potential problems before they become costly repairs.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 text-center mb-3">Downpipe Unblocking</h3>
+                <div className="relative aspect-4/3 rounded-md overflow-hidden shadow">
+                  <img src="/images/service_gutter_cleaning.png" alt="Downpipe Unblocking" className="w-full h-full object-cover" />
+                </div>
+                <p className="mt-4 text-gray-700 text-sm leading-relaxed">
+                  Fast and effective downpipe unblocking service using <span className="font-semibold">specialist tools</span> to clear blockages and ensure proper drainage. We prevent water damage and overflow issues with our <span className="font-semibold">same-day service</span> and high-pressure clearing equipment.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 text-center mb-3">Maintenance Plans</h3>
+                <div className="relative aspect-4/3 rounded-md overflow-hidden shadow">
+                  <img src="/images/service_gutter_installation.png" alt="Maintenance Plans" className="w-full h-full object-cover" />
+                </div>
+                <p className="mt-4 text-gray-700 text-sm leading-relaxed">
+                  Save money with our <span className="font-semibold">maintenance plans</span>. Regular gutter cleaning prevents costly repairs and water damage. Choose from quarterly, bi-annual, or annual service plans with <span className="font-semibold">priority booking and discounted rates</span>.
+                </p>
+              </div>
             </div>
           </div>
         </section>

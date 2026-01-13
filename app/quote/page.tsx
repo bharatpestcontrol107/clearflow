@@ -35,25 +35,16 @@ export default function QuotePage() {
   return (
     <>
       <Header />
-      <main className="min-h-screen bg-linear-to-br from-gray-50 to-white">
+      <main className="min-h-screen bg-gradient-to-br from-cyan-50 to-blue-50">
         {/* Hero Section */}
-        <section className="relative pt-16 lg:pt-20 bg-linear-to-br from-cyan-500 to-blue-600 text-white">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-            <Link href="/" className="inline-flex items-center gap-2 text-blue-100 hover:text-white mb-6 transition">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-              </svg>
-              Back
-            </Link>
-            <div className="text-center max-w-3xl mx-auto">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-                Get a Quote
+        <section className="relative bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 md:py-32">
+            <div className="max-w-4xl mx-auto text-center">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold uppercase tracking-wide leading-tight mb-6">
+                Get Your Free Quote
               </h1>
-              <h2 className="text-xl md:text-2xl font-semibold mb-4">
-                Book your clear flow
-              </h2>
-              <p className="text-base md:text-lg text-blue-100">
-                Fill out the details below for a fast, free quote.
+              <p className="text-xl md:text-2xl text-blue-100 font-medium">
+                Fill out the details below for a fast, free quote
               </p>
             </div>
           </div>
@@ -296,7 +287,7 @@ export default function QuotePage() {
         </section>
 
         {/* Benefits Section */}
-        <section className="py-12 lg:py-16 bg-white">
+        <section className="py-12 lg:py-16 bg-gradient-to-br from-cyan-50 to-blue-50">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-10">
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">

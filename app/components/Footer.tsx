@@ -34,8 +34,8 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li><Link href="/" className="text-sm hover:text-cyan-400 transition">Home</Link></li>
+              <li><Link href="/about" className="text-sm hover:text-cyan-400 transition">About</Link></li>
               <li><Link href="/services" className="text-sm hover:text-cyan-400 transition">Services</Link></li>
-              <li><Link href="/work" className="text-sm hover:text-cyan-400 transition">Our Work</Link></li>
               <li><Link href="/quote" className="text-sm hover:text-cyan-400 transition">Get a Quote</Link></li>
             </ul>
           </div>
